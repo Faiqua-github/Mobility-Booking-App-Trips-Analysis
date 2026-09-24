@@ -114,6 +114,4 @@ namma-yatri-trips-analysis/
 - Trip volume, fares, and distance all show similar cyclical patterns across duration buckets.
 - Assembly-level breakdowns reveal meaningful variation in search volume and quote conversion by area, useful for targeted driver allocation.
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
