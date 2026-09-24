@@ -29,6 +29,22 @@ The analysis is built on five core tables:
 | `duration`     | Lookup table mapping duration IDs to duration labels |
 | `payment`      | Lookup table mapping payment method IDs to method names |
 
+## Meaning of each column in TRIPS Table
+
+| Column                   | Meaning                                                                        | Example                         |
+| ------------------------ | ------------------------------------------------------------------------------ | ------------------------------- |
+| `tripid`                 | Unique ID for each trip/request                                                | `1` = Trip 1                    |
+| `loc_from`               | Location from which the trip starts                                            | `16` = location ID 16           |
+| `searches`               | Number of times the customer searched for a trip/ride                          | `1` = customer made a search    |
+| `searches_got_estimate`  | Search resulted in an estimated fare/price being shown                         | `1` = estimate was provided     |
+| `searches_for_quotes`    | Customer proceeded to request/look for actual quotes after seeing the estimate | `1` = customer requested quotes |
+| `searches_got_quotes`    | Customer actually received one or more ride quotes                             | `1` = quote was received        |
+| `customer_not_cancelled` | Customer did not cancel the trip                                               | `1` = customer continued        |
+| `driver_not_cancelled`   | Driver did not cancel the trip                                                 | `1` = driver continued          |
+| `otp_entered`            | OTP was entered to start/confirm the ride                                      | `1` = OTP entered               |
+| `end_ride`               | Ride was successfully completed/ended                                          | `1` = ride ended                |
+
+
 ## 🛠️ Tech Stack
 
 | Layer         | Tools                        |
